@@ -1,3 +1,8 @@
 # This file contains recursive sources that require this package
 R-crul
 R-fauxpas
+R-solrium
+R-taxize
+R-vcr
+R-wikitaxa
+R-worrms
