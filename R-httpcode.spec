@@ -4,7 +4,7 @@
 #
 Name     : R-httpcode
 Version  : 0.2.0
-Release  : 14
+Release  : 15
 URL      : https://cran.r-project.org/src/contrib/httpcode_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/httpcode_0.2.0.tar.gz
 Summary  : 'HTTP' Status Code Helper
