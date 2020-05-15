@@ -4,7 +4,7 @@
 #
 Name     : R-httpcode
 Version  : 0.3.0
-Release  : 18
+Release  : 19
 URL      : https://cran.r-project.org/src/contrib/httpcode_0.3.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/httpcode_0.3.0.tar.gz
 Summary  : 'HTTP' Status Code Helper
@@ -13,31 +13,28 @@ License  : MIT
 BuildRequires : buildreq-R
 
 %description
-httpcode
-========
-[![cran checks](https://cranchecks.info/badges/worst/httpcode)](https://cranchecks.info/pkgs/httpcode)
-[![Build Status](https://travis-ci.org/sckott/httpcode.svg)](https://travis-ci.org/sckott/httpcode)
-[![codecov](https://codecov.io/gh/sckott/httpcode/branch/master/graph/badge.svg)](https://codecov.io/gh/sckott/httpcode)
-[![rstudio mirror downloads](https://cranlogs.r-pkg.org/badges/httpcode)](https://github.com/metacran/cranlogs.app)
-[![cran version](https://www.r-pkg.org/badges/version/httpcode)](https://cran.r-project.org/package=httpcode)
+Functions included for searching for codes by full or partial number,
+    by message, and get appropriate dog and cat images for many
+    status codes.
 
 %prep
 %setup -q -c -n httpcode
+cd %{_builddir}/httpcode
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1587061991
+export SOURCE_DATE_EPOCH=1589529033
 
 %install
-export SOURCE_DATE_EPOCH=1587061991
+export SOURCE_DATE_EPOCH=1589529033
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
